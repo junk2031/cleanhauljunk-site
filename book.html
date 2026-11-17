@@ -117,7 +117,8 @@ input:focus,textarea:focus{border-color:var(--orange);background:#fff}
 .vanload{margin-top:16px;padding:16px;border-radius:16px;background:linear-gradient(100deg,#FFF4E8,#EEF3FB);border:1px dashed #E4C9A8}
 .vanload p{font-size:14px;color:var(--muted);margin-bottom:12px}
 .vanload p b{color:var(--navy)}
-.seg{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:6px}
+.seg{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:6px}
+@media(max-width:560px){.seg{grid-template-columns:repeat(4,minmax(0,1fr))}}
 .seg label{margin:0}
 .seg input{position:absolute;opacity:0;pointer-events:none}
 .seg span{display:block;text-align:center;padding:10px 4px;border-radius:10px;border:1.5px solid var(--line);background:#fff;font-weight:700;font-size:13px;cursor:pointer;color:var(--navy)}
@@ -295,6 +296,7 @@ footer a{color:var(--navy);font-weight:700}
           <p><b>Lots of loose junk?</b> Skip the list — just pick how much of our van you'll fill.</p>
           <div class="seg">
             <label><input type="radio" name="big" value="0" checked><span>Items<small>only</small></span></label>
+            <label><input type="radio" name="big" value="12.5"><span>1/8<small>$129</small></span></label>
             <label><input type="radio" name="big" value="25"><span>1/4<small>$229</small></span></label>
             <label><input type="radio" name="big" value="50"><span>1/2<small>$419</small></span></label>
             <label><input type="radio" name="big" value="75"><span>3/4<small>$599</small></span></label>
